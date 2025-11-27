@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela z ciemną kolumną</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Usuwa przerwy między komórkami */
+            border: 6px double black; /* Podwójna linia wokół całej tabeli */
+        }
+
+        th, td {
+            border: 1px solid black; /* Cienkie linie wokół komórek */
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #9d4ba6; /* Kolor nagłówków */
+            color: white; /* Biały kolor tekstu */
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .header {
+            background-color: #cf8bd6; /* Kolor tła nagłówka tabeli */
+            color: white; /* Biały tekst */
+            text-align: center;
+            font-size: 18px;
+            padding: 10px;
+            font-weight: bold;
+            border: 6px double black; /* Podwójne obramowanie wokół nagłówka */
+            border-bottom: none; /* Usunięcie dolnego obramowania */
+        }
+
+        .vertical-text {
+            writing-mode: vertical-lr; /* Tekst pionowy */
+            transform: rotate(180deg); /* Odwrócony tekst pionowy */
+            background-color: #fbd4ff; /* Dopasowanie tła */
+            font-weight: bold;
+            color: black;
+        }
+
+        /* Naprzemienne kolorowanie wierszy poza pierwszą kolumną */
+        tr:nth-child(even) td:not(:first-child) {
+            background-color: #fbd4ff; /* Jasny niebieski */
+        }
+
+        tr:nth-child(odd) td:not(:first-child) {
+            background-color: #9d4ba6; /* Ciemny niebieski */
+        }
+
+        /* Kolumna Format Płyty Głównej */
+        .format-column, .format-column-header {
+            background-color: #cf8bd6; /* Ciemniejszy niebieski kolor */
+            color: white; /* Biały tekst */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Dane Komputerowe – Eisen Kisielow</div>
+    <table>
+        <tr>
+            <th class="vertical-text" rowspan="10">APARATY FOTOGRAFICZNE</th>
+            <th class="format-column-header">Model</th>
+            <th>Rozdzielczość</th>
+            <th>Typ matrycy</th>
+            <th>Obiektyw</th>
+            <th>Wideo</th>
+        </tr>
+        <tr>
+            <td class="format-column">Canon Eos R6 Mark II</td>
+            <td>24.2MP</td>
+            <td>Full-frame CMOS</td>
+            <td>Wymienny (RF)</td>
+            <td>4k 60 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Nikon Z6 II</td>
+            <td>24.5MP</td>
+            <td>Full-frame BSI CMOS</td>
+            <td>Wymienny (Z)</td>
+            <td>4K 60 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Sony Alpha A7</td>
+            <td>33 MP</td>
+            <td>Full-Frame BSI CMOS</td>
+            <td>Wymienny (E)</td>
+            <td>4K 60 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Fujifilm X-T5</td>
+            <td>40.2 MP</td>
+            <td>APS-C X-Trans CMOS</td>
+            <td>Wymienny (X)</td>
+            <td>6.2K 30 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Panasonic Lumix GH6</td>
+            <td>25.2 MP</td>
+            <td>Micro Four Thirds</td>
+            <td>Wymienny (MFT)</td>
+            <td>5.7K 60 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Olympus OM-D E-M10 Mark</td>
+            <td>20 MP</td>
+            <td>Micro Four Thirds</td>
+            <td>Wymienny (MFT)</td>
+            <td>4K 30 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Canon PowerShot G7 X III</td>
+            <td>20.1 MP</td>
+            <td>1" CMOS</td>
+            <td>Wbudowany (24-100 mm)</td>
+            <td>4K 30 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Sony ZV-E10</td>
+            <td>24.2 MP</td>
+            <td>APS-C CMOS</td>
+            <td>Wymienny (E)</td>
+            <td>4K 30 fps</td>
+        </tr>
+        <tr>
+            <td class="format-column">Nikon D850</td>
+            <td>45.7 MP</td>
+            <td>Full-Frame BSI CMOS</td>
+            <td>Wymienny (F)</td>
+            <td>4K 30 fps</td>
+        </tr>
+    </table>
+  <A HREF="index.html">Wróć</A> 
+</body>
+</html>
